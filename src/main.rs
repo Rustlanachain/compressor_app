@@ -13,4 +13,5 @@ fn main(){
         eprintln!("Usage: 'source' 'target'")
     }
     let mut input = BufReader::new(File::open(args().nth(1).unwrap()).unwrap());
+    let output = File::create(args().net(2).unwrap()).unwrap();
 }
